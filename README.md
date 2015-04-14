@@ -7,19 +7,30 @@
 
 - Clone this repository:
 
-        git clone https://github.com/zeljkofilipin/selenium-vagrant.git
+        $ git clone https://github.com/zeljkofilipin/selenium-vagrant.git
 
 - Create virtual machine:
 
-        cd selenium-vagrant
-        vagrant up
+        $ cd selenium-vagrant
+        $ vagrant up
 
 - Log into the virtual machine:
 
-        vagrant ssh
+        $ vagrant ssh
 
 - Run sample scripts:
 
-        cd /vagrant
-        ruby phantomjs.rb        # creates phantomjs.png
-        ruby firefox-headless.rb # creates firefox-headless.rb
+        $ cd /vagrant
+        $ ruby phantomjs.rb        # creates phantomjs.png
+        $ ruby firefox-headless.rb # creates firefox-headless.png
+
+- Log out from the virtual machine:
+
+        $ logout
+
+- `phantomjs.png` and `firefox-headless.png` are available in the root of the
+  selenium-vagrant repository on the host machine:
+
+        $ ls
+        LICENSE     Vagrantfile   firefox-headless.png  phantomjs.png
+        README.md   firefox-gui.rb    firefox-headless.rb phantomjs.rb
