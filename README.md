@@ -28,7 +28,7 @@
 
         $ logout
 
-- `phantomjs.png` and `firefox-headless.png` are available in the root of the
+- [phantomjs.png](phantomjs-sample.png) and `firefox-headless.png` are available in the root of the
   selenium-vagrant repository on the host machine:
 
         $ ls
