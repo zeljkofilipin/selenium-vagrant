@@ -79,4 +79,26 @@ Vagrant.configure(2) do |config|
     sudo gem install headless
     sudo apt-get install -y firefox
   SHELL
+
+  # Here be dragons!!!
+  # Install Firefox with GUI
+  # config.vm.provider "virtualbox" do |vb|
+  #   vb.gui = true
+  # end
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   According to 
+  #   https://help.ubuntu.com/community/ServerGUI#Full_Desktop_Environments
+  #   pick one of XFCE, KDE or Gnome.
+  #
+  #   XFCE, 1247 MB
+  #   sudo apt-get install -y xubuntu-desktop
+  #
+  #   KDE, 1638 MB
+  #   sudo apt-get install -y kubuntu-desktop
+  #
+  #   Gnome, 1778 MB
+  #   sudo apt-get install -y ubuntu-desktop
+  #
+  #   sudo apt-get install -y firefox
+  # SHELL
 end

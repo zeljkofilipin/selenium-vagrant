@@ -13,6 +13,7 @@
 
         $ cd selenium-vagrant
         $ vagrant up
+        # Please hold, your call is important to us...
 
 - Log into the virtual machine:
 
@@ -45,3 +46,9 @@
         └── phantomjs.rb
 
         0 directories, 10 files
+
+## Here be dragons!!!
+
+This is experimental. The above virtual machine was headless. If you would
+prefer a machine with GUI, uncomment *Here be dragons!!!* section in the
+`Vagrantfile`.
