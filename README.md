@@ -28,9 +28,20 @@
 
         $ logout
 
-- [phantomjs.png](phantomjs-sample.png) and `firefox-headless.png` are available in the root of the
+- [phantomjs.png](phantomjs-sample.png) and [firefox-headless.png](firefox-headless-sample.png) are available in the root of the
   selenium-vagrant repository on the host machine:
 
-        $ ls
-        LICENSE     Vagrantfile   firefox-headless.png  phantomjs.png
-        README.md   firefox-gui.rb    firefox-headless.rb phantomjs.rb
+        $ tree
+        .
+        ├── LICENSE
+        ├── README.md
+        ├── Vagrantfile
+        ├── firefox-gui.rb
+        ├── firefox-headless-sample.png
+        ├── firefox-headless.png         # You have just created this file!
+        ├── firefox-headless.rb
+        ├── phantomjs-sample.png
+        ├── phantomjs.png                # This one too!
+        └── phantomjs.rb
+
+        0 directories, 10 files
