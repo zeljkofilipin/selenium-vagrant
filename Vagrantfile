@@ -73,6 +73,8 @@ Vagrant.configure(2) do |config|
     sudo apt-get install -y phantomjs
   SHELL
   config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get install -y xvfb
+    sudo gem install headless
     sudo apt-get install -y firefox
   SHELL
 end
