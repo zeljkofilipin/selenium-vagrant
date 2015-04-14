@@ -36,3 +36,7 @@ build/
 
 # Ignore /.vagrant folder
 /.vagrant
+
+# Ignore files created by Ruby scripts in the virtual machine
+firefox-headless.png
+phantomjs.png
