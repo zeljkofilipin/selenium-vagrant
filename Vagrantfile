@@ -61,17 +61,19 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
-  # Enable provisioning with a shell script. Additional provisioners such as
-  # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
-  # documentation for more information about their specific syntax and use.
+  # Install Selenium and prerequisites
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y ruby1.9.1-dev
     sudo gem install selenium-webdriver
   SHELL
+
+  # Install PhantomJS
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get install -y phantomjs
   SHELL
+
+  # Install Firefox headless
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get install -y xvfb
     sudo gem install headless
