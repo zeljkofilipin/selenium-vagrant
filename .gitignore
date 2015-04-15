@@ -38,6 +38,5 @@ build/
 /.vagrant
 
 # Ignore files created by Ruby scripts in the virtual machine
-firefox-gui.png
-firefox-headless.png
+firefox.png
 phantomjs.png
