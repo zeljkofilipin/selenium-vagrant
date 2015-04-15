@@ -84,6 +84,7 @@ Vagrant.configure(2) do |config|
   # Install Firefox with GUI
   # config.vm.provider "virtualbox" do |vb|
   #   vb.gui = true
+  #   vb.memory = "768"
   # end
   # config.vm.provision "shell", inline: <<-SHELL
   #   According to 

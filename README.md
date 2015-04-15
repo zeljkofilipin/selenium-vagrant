@@ -52,3 +52,26 @@
 This is experimental. The above virtual machine was headless. If you would
 prefer a machine with GUI, uncomment *Here be dragons!!!* section in the
 `Vagrantfile`.
+
+If you did not create the machine so far, create it:
+
+        $ vagrant up
+
+If you did create the machine, reload it so the changes to the `Vagrantfile`
+are applied.
+
+        $ vagrant reload
+
+In any case, be patient, it will take some time.
+
+When the virtual machine is ready, login via VirtualBox GUI interface. Username is
+`vagrant`, password is `vagrant`. Open terminal and go to `/vagrant` folder.
+
+        $ cd /vagrant
+
+You can still run `phantomjs.rb` and `firefox-headless.rb`, but now you can
+also run `firefox-gui.rb`:
+
+        $ ruby firefox-gui.rb # creates firefox-gui.png
+
+You should be able to see Firefox running in the virtual machine.
