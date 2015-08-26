@@ -61,22 +61,4 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
-  # Install Selenium
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get update
-    sudo apt-get install -y ruby1.9.1-dev
-    sudo gem install selenium-webdriver
-  SHELL
-
-  # Install PhantomJS
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get install -y phantomjs
-  SHELL
-
-  # Install Firefox
-  config.vm.provision "shell", inline: <<-SHELL
-    sudo apt-get install -y xvfb
-    sudo gem install headless
-    sudo apt-get install -y firefox
-  SHELL
 end
