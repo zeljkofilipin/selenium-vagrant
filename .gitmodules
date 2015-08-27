@@ -1,0 +1,3 @@
+[submodule "modules/ruby"]
+	path = modules/ruby
+	url = https://github.com/puppetlabs/puppetlabs-ruby.git
