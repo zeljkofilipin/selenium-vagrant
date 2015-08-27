@@ -61,6 +61,8 @@ Vagrant.configure(2) do |config|
   #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
   # end
 
-  config.vm.provision "puppet"
+  config.vm.provision "puppet" do |puppet|
+    puppet.module_path = "modules"
+  end
 
 end

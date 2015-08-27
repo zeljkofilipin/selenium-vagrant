@@ -4,6 +4,8 @@ class { 'ruby':
 }
 
 package { 'selenium-webdriver':
-  ensure => 'installed',
+  ensure   => 'installed',
   provider => 'gem',
 }
+
+Class['ruby'] -> Package <| provider == gem |>
