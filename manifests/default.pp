@@ -1,3 +1,11 @@
+package { 'firefox':
+  ensure   => 'installed',
+}
+
+package { 'phantomjs':
+  ensure   => 'installed',
+}
+
 class { 'ruby':
   ruby_package => 'ruby1.9.1-dev',
   gems_version => 'latest',
